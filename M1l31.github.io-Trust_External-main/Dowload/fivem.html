@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../product pages/Trust.png" type="image/x-icon">
+    <title>TRUST TUTORIAL</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000000;
+            background-size: 1920px 1080px;
+            /* Adjust the background size as needed */
+            background-repeat: no-repeat;
+            /* Prevent the background from repeating */
+            color: #ddd;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            /* Align elements vertically */
+            align-items: center;
+        }
+
+        .nav {
+            background-color: rgba(151, 0, 0);
+            width: 100%;
+            padding: 10px 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .nav a {
+            color: #ddd;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 16px;
+        }
+
+        .nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            background-color: #222;
+            border-radius: 30px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(151, 0, 0);
+            text-align: center;
+            margin-top: 20px;
+            /* Add margin to separate from player */
+        }
+
+        h2 {
+            margin-top: 0;
+        }
+
+        .button {
+            background-color: #000000;
+            border: none;
+            color: #ffffff;
+            padding: 10px 20px;
+            border-radius: 15px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #6d0000;
+        }
+
+        .logo {
+            margin-bottom: 20px;
+        }
+
+        .alert {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: #007bff;
+            color: #000000;
+            border-radius: 5px;
+            padding: 10px;
+            display: none;
+        }
+
+        #playerContainer {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            /* Center horizontally */
+            align-items: flex-start;
+            /* Align to the top */
+            margin-top: 50px;
+            /* Move down slightly */
+        }
+
+        #player {
+            max-width: 600px;
+            border-radius: 10px;
+            /* Add rounded corners */
+            overflow: hidden;
+            /* Ensure content doesn't overflow rounded corners */
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div id="playerContainer">
+        <div id="player"></div>
+    </div>
+    
+    <audio id="background-music" src="../Musica/despuesdela1.mp3" preload="auto" autoplay loop></audio>
+
+    <div class="container" id="downloadContainer">
+        <div class="logo">
+            <!-- Placeholder for your logo -->
+            <img src="../Dowload/assets/images/Trust.png" alt="Logo" width="150">
+        </div>
+        <h2>Trust External Cheat</h2>
+        <p class="credentials">Desabilite Antivirus | By Trust</p>
+        <button class="button" onclick="download()">DOWNLOAD</button>
+        <button class="button" onclick="Tutorial()">Tutorial</button>
+    </div>
+    <div class="container" id="downloadContainer">
+        <h2>Requiriments</h2>
+        <p class="credentials">Instale antes de instalar el Cheat</p>
+        <button class="button" onclick="download1()">Requiriment 1</button>
+        <button class="button" onclick="download2()">Requiriment 2</button>
+        <button class="button" onclick="download3()">Requiriment 3</button>
+    </div>
+
+    <div class="alert" id="customAlert">Custom alert box</div>
+    
+
+    <script>
+
+        function onPlayerReady(event) {
+            // You can do something when the player is ready
+        }
+
+        function onPlayerStateChange(event) {
+            // You can do something when player's state changes
+        }
+
+        function download() {
+            // Replace "YOUR_DOWNLOAD_LINK" with your desired download link
+            window.location.href = "https://raw.githubusercontent.com/M1l31/Dowload_Trust/refs/heads/main/Trust.zip";
+        }
+        function Tutorial() {
+            // Replace "YOUR_DOWNLOAD_LINK" with your desired download link
+            window.location.href = "https://www.youtube.com/watch?v=PhPNntWqRDQ";
+        }
+        function download1() {
+            // Replace "YOUR_DOWNLOAD_LINK" with your desired download link
+            window.location.href = "https://raw.githubusercontent.com/M1l31/Dowload_Trust/refs/heads/main/Requiriments%201.exe";
+        }
+        function download2() {
+            // Replace "YOUR_DOWNLOAD_LINK" with your desired download link
+            window.location.href = "https://raw.githubusercontent.com/M1l31/Dowload_Trust/refs/heads/main/Requiriments%202.exe";
+        }
+        function download3() {
+            // Replace "YOUR_DOWNLOAD_LINK" with your desired download link
+            window.location.href = "https://raw.githubusercontent.com/M1l31/Dowload_Trust/refs/heads/main/dxwebsetup.exe";
+        }
+
+        function showAlert(message) {
+            var alertBox = document.getElementById("customAlert");
+            alertBox.innerText = message;
+            alertBox.style.display = "block";
+            setTimeout(function() {
+                alertBox.style.display = "none";
+            }, 3000); // Hide after 3 seconds
+        }
+    </script>
+
+</body>
+
+</html>
